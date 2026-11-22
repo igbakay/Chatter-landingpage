@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chatter Landing Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="logo">CHATTER</div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#">Home</a>
+          <a href="#">About us</a>
+          <a href="#">Contact</a>
+          <a href="#">Blogs</a>
+          <a href="#" class="nav-login">Log in</a>
+          <a href="#" class="nav-signup">Sign up</a>
+        </nav>
+      </header>
+
+      <main class="content-area">
+        <section class="hero-section" aria-label="Hero section">
+          <div class="hero-content">
+            <h1>Welcome to Chatter: A Haven for Text-<br />Based Content</h1>
+            <p>
+              Unleash the Power of Words, Connect with Like-minded Readers
+              and Writers
+            </p>
+            <button type="button">Get started</button>
+          </div>
+        </section>
+
+        <section class="about-section" aria-label="About Chatter section">
+          <div class="about-copy">
+            <h2>About Chatter</h2>
+            <p>
+              Chatter is a multi-functional platform where authors and readers can have access
+              to their own content. It aims to be a traditional bookworm’s heaven and a blog to
+              get access to more text based content. Our vision is to foster an inclusive and
+              vibrant community where diversity is celebrated. We encourage open-mindedness and
+              respect for all individuals, regardless of their backgrounds or beliefs. By promoting
+              dialogue and understanding, we strive
+            </p>
+          </div>
+          <div class="about-visual" aria-label="About Chatter image"></div>
+        </section>
+
+        <section class="why-section" aria-label="Why join Chatter section">
+          <h3>Why you should join chatter</h3>
+          <p>
+            Our goal is to make writers and readers see our platform as their next haven for blogging,
+            ensuring ease in interactions, connecting with like-minded peers, have access to favorite
+            content based on interest and able to communicate your great ideas with people
+          </p>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <div class="feature-icon analytics" aria-label="Analytics">▥</div>
+              <h4>Analytics</h4>
+              <p>Analytics to track the number of views, likes and comment and also monitor the performance of your articles over a period of time</p>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon social" aria-label="Social interactions">♟</div>
+              <h4>Social interactions</h4>
+              <p>Users on the platform can interact with posts they like, comment and engage in discussions</p>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon creative" aria-label="Content creation">▧</div>
+              <h4>Content creation</h4>
+              <p>Write nice and appealing with our in-built markdown, a rich text editor</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="community-section" aria-label="Community testimonial">
+          <div class="testimonial-card">
+            <div class="testimonial-profile" aria-label="Adabobola Muhydeen profile"></div>
+
+            <div class="testimonial-copy">
+              <blockquote>
+                “Chatter has become an integral part of my online experience. As a user of this incredible blogging platform, I have discovered a wealth of knowledge and been able to engage with individuals who are passionate about sharing their ideas and engaging in thoughtful discussions.”
+              </blockquote>
+              <p class="testimonial-author">
+                <strong>Adabobola Muhydeen</strong>, Software developer at Apple
+              </p>
+              <button type="button">Join chatter</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="community-cta-section" aria-label="Chatter community call to action">
+          <div class="community-cta-card">
+            <div class="profile-stack" aria-label="Chatter community members">
+              <div class="profile profile-one"></div>
+              <div class="profile profile-two"></div>
+              <div class="profile profile-three"></div>
+            </div>
+
+            <div class="community-cta-copy">
+              <h4>Write, read and connect with great minds on chatter</h4>
+              <p>
+                Share people your great ideas, and also read write-ups based on your
+                interests, connect with people of same interests and goals
+              </p>
+              <button type="button">Get started</button>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-brand">CHATTER</div>
+
+        <div class="footer-links">
+          <div>
+            <h5>Explore</h5>
+            <ul>
+              <li>Community</li>
+              <li>Trending blogs</li>
+              <li>Chatter for teams</li>
+            </ul>
+          </div>
+
+          <div>
+            <h5>Support</h5>
+            <ul>
+              <li>Support docs</li>
+              <li>Join slack</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+
+          <div>
+            <h5>Official blog</h5>
+            <ul>
+              <li>Official blog</li>
+              <li>Engineering blog</li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+      <aside class="cookie-bar" role="dialog" aria-label="Cookie preferences">
+        <p>
+          This website uses cookies, pixel tags, and local storage for performance,
+          personalization, and marketing purposes. We use our own cookies and some from
+          third parties. Only essential cookies are turned on by default. <u>Cookie settings</u>
+        </p>
+        <div class="cookie-actions">
+          <button type="button" class="cookie-reject">Do not allow cookies</button>
+          <button type="button" class="cookie-allow">Allow all cookies</button>
+        </div>
+      </aside>
+
+      <script>
+        const cookieBar = document.querySelector('.cookie-bar');
+        document.querySelectorAll('.cookie-actions button').forEach((button) => {
+          button.addEventListener('click', () => {
+            cookieBar.remove();
+          });
+        });
+      </script>
+    </div>
+  </body>
+</html>
